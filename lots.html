@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cedar Grove HOA - Interactive Lots Map</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="text-gray-800 bg-gray-50">
+    <header class="bg-gradient-to-r from-green-700 to-green-900 text-white shadow-lg py-4 md:py-6">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mb-0">Cedar Grove HOA</h1>
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-8 text-lg">
+                    <li><a href="index.html" class="hover:text-green-200 transition duration-300 ease-in-out rounded-md p-2">Homepage</a></li>
+                    <li><a href="lots.html" class="hover:text-green-200 transition duration-300 ease-in-out rounded-md p-2">Lots</a></li>
+                    <li><a href="local_links.html" class="hover:text-green-200 transition duration-300 ease-in-out rounded-md p-2">Local Links</a></li>
+                    <li><a href="businesses.html" class="hover:text-green-200 transition duration-300 ease-in-out rounded-md p-2">Businesses</a></li>
+                    <li><a href="dogs.html" class="hover:text-green-200 transition duration-300 ease-in-out rounded-md p-2">Pet Pictures</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container mx-auto px-4 py-8 md:py-12">
+        <div class="bg-white rounded-xl shadow-xl overflow-hidden border border-gray-200">
+            <div class="p-6 md:p-8 bg-white">
+                <h2 class="text-4xl font-bold text-green-800 mb-4">Interactive Neighborhood Map</h2>
+                <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                    This interactive tool allows residents to view official property boundaries and lot numbers for the Cedar Grove community. 
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
+                    <div class="flex items-start p-4 bg-green-50 rounded-lg border border-green-100">
+                        <span class="text-2xl mr-3">📍</span>
+                        <p class="text-sm text-green-800"><strong>Click a lot:</strong> See the exact address and property number assigned by the county.</p>
+                    </div>
+                    <div class="flex items-start p-4 bg-blue-50 rounded-lg border border-blue-100">
+                        <span class="text-2xl mr-3">🔍</span>
+                        <p class="text-sm text-blue-800"><strong>Navigation:</strong> Use your mouse or fingers to zoom in for detail or drag to move across the neighborhood.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative pb-[100%] md:pb-[55%] h-0 w-full bg-gray-100">
+                <iframe 
+                    src="https://www.google.com/maps/d/u/0/embed?mid=1e8sxLiJb7YYMEoWHUcJoP5DyoQ-WFpg&ehbc=2E312F&noprof=1" 
+                    class="absolute top-0 left-0 w-full h-full border-0" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">© 2026 Cedar Grove HOA | Built for the community.</p>
+        </div>
+    </footer>
+</body>
+</html>
